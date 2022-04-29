@@ -1,0 +1,77 @@
+.quadro, .campo{
+    background-color: #fafafa;
+}
+.informacoes{
+    display: block;
+    margin: 40px auto 10px;
+    width: 400px;
+    height: 500px;
+}
+.informacoes, .campo, .conectar{
+    border: 1px solid rgb(194, 194, 194);
+}
+.informacoes, .conectar{
+    background-color: #fff;
+}
+.logo{
+    font-size: 40px;
+    text-align: center;
+    margin: 50px 0px 20px;
+}
+.textInicial{
+    width: 260px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cadastro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.campo{
+    margin-bottom: 10px;
+}
+.campo, .botao_enviar{
+    width: 300px;
+    height: 36px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+#selecao{
+    color: rgb(121, 121, 121);
+    width: 320px;
+}
+.botao_enviar{
+    border: none;
+    color: #fff;
+    background-color: rgb(17, 114, 101);
+}
+.politica{
+    width: 300px;
+    text-align: center;
+    display: block;
+    margin: 15px auto;
+}
+.politica a{
+    text-decoration: none;
+    color: black;
+}
+.conectar{
+    width: 400px;
+    height: 80px;
+    display: block;
+    margin: 20px auto;
+}
+.conectar p{
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translatey(-50%);
+}
+.conectar p a{
+    text-decoration: none;
+    color: rgb(72, 153, 230);
+}
