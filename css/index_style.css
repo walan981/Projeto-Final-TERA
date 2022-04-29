@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#login{
+    background-color: aqua;
+    height: 100vh;
+}
+
+
+#login .containerLogin{
+    background-color: azure;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.containerLogin h2{
+    margin-bottom: 20px;
+}
+
+
+.containerLogin input[type=text],
+.containerLogin input[type=email]{
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+
+    background-color: white;
+    color:  #7E92AC;
+    border: 1px solid #C3CCE8;
+    border-radius: 10px;
+
+}
+
+.containerLogin input[type=submit]{
+    text-align: center;
+    width: 30%;
+    height: 40px;
+    background: #255AFF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 0;
+}

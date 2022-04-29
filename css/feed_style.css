@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 200vh;
+}
+
+
+#feedMenu{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: aquamarine;
+    padding: 10px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+}
+
+
+#feedMenu .logo{
+    text-align: center;
+    background-color: red;
+
+}
+
+#feedMenu input[type=text]{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    color:  #7E92AC;
+    border: 1px solid #C3CCE8;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+
+#feedMenu .itens{
+    margin-right: 30px;
+    display: flex;
+    column-gap: 5%;
+}
+
+/* ***************************************************** */
+
+#feedMain{
+    background-color: antiquewhite;
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 50vw;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Automatiza template dos posts*/
+#feedMain > *{
+    background-color: #0b77e3;
+    width: 500px;
+    /* height: 30vw; */
+    margin-bottom: 30px;
+}
+
+.post{
+    justify-content: center;
+}
+
+.postTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* alinhamento vertical*/
+    column-gap: 5px;
+    margin: 30px 0 5px 30px;
+    /* padding: 30px 30px 10px 30px; */
+}
+
+.postLoc{
+    margin-left: 30px;
+}
+
+
+
+.postPic{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    background-color: rgb(69, 92, 111);
+    width: 100%;
+    height: 370px;
+}
+
+.postItens{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.postItens a{
+    margin-right: 20px;
+}
