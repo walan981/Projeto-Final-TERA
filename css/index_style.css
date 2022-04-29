@@ -6,19 +6,29 @@
 
 
 #login{
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 100vh;
+    width: 100vw;
+
+    background-image: url("https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286&q=80");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+
+    padding-top: 10px;
 }
 
 
 #login .containerLogin{
-    background-color: azure;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid #7E92AC;
+
     width: 350px;
     text-align: center;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+
+    position: absolute;
+    right: 10%;
+    top: 30%;
 
     display: flex;
     flex-direction: column;
@@ -47,10 +57,21 @@
     text-align: center;
     width: 30%;
     height: 40px;
-    background: #255AFF;
+    background: #127267;
     color: #FFFFFF;
     border-radius: 10px;
     margin-bottom: 20px;
     cursor: pointer;
     border: 0;
 }
+
+.containerLogin a{
+    text-decoration: none;
+    color: rgb(72, 153, 230);
+}
+
+.containerLogin h3{
+    font-size: 14px;
+}
+
+
