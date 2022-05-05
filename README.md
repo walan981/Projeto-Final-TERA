@@ -6,29 +6,20 @@
 
 ## 📖 Descrição do Projeto
 
-<hr>
-
 ## ⌛ Status do projeto
 
 <progress value="10" max="100"></progress>
 
-<hr>
-
 ## 📱 Funcionalidades e Demonstração da Aplicação
-
-<hr>
 
 ## 🖱️ Acesso ao Projeto
 
 Veja o [Wireframe](https://app.uizard.io/p/462ffb64) do projeto e acompanhe como a [Plataforma](https://walan981.github.io/Projeto-Final-TERA/) está ficando.
-<hr>
 
 ## 💻 Tecnologias utilizadas
 - HTML5
 - CSS3
 - Javascript
-
-<hr>
 
 #### Desenvolvido por [Alan Pitthan](https://github.com/walan981) e [Kelly Santos](https://github.com/Kellycns).
 
