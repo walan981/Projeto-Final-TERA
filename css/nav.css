@@ -1,0 +1,59 @@
+#feedMenu{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    padding: 10px 120px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+}
+
+
+#feedMenu .logo{
+    text-align: center;
+    font-size: 20px;
+}
+
+#feedMenu .searchBar{
+    /* background-color: red; */
+    width: 270px;
+}
+
+#feedMenu input[type=text]{
+    height: 40px;
+    width: 100%;
+    height: 36px;
+    border-style: none;
+    padding: 0px 16px;
+    border-radius: 10px;
+    background-color: #efefef;
+}
+
+.itens{
+    display: flex;
+}
+
+.itens a{
+    margin-right: 20px;
+}
+
+
+.itens i{
+    font-size: 23px;
+    color: white;
+    -webkit-text-stroke: 1.5px rgb(109, 110, 112);
+}
+
+
+#icone_fotos{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+}

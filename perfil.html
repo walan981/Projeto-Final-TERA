@@ -4,26 +4,28 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Perfil</title>
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/all.css">
         <link rel="stylesheet" type="text/css" href="css/perfil_style.css">
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
     </head>
     <body>
-        <header class="topo">
-            <div class="barraMenu">
-                <h1 class="barraMenu_logo">meuPet</h1>
-                <input type="text" placeholder="Pesquisar" class="pesquisar">
-                <nav class="barraMenu_navegacao">
-                    <ul>
-                        <li><a href="feed.html"><img src="img/icones/casa.png" alt="feed" class="icone"></a></li>
-                        <li><a href=""><img src="img/icones/mensagem.png" alt="mensagem"class="icone"></a></li>
-                        <li><a href=""><img src="img/icones/mais.png" alt="adiconar mídia" class="icone"></a></li>
-                        <li><a href=""><img src="img/icones/bussola.png" alt="local" class="icone"></a></li>                        
-                        <li><a href=""><img src="img/icones/notificacao.png" alt="notificações" class="icone"></a></li>
-                        <li><a href=""><img src="img/perfil.jpg" alt="perfil" class="icone" id="icone_fotos"></a></li>
-                    </ul>
-                </nav>
+        <section id="feedMenu">
+            <div class="logo">
+                <h2>MyPet</h2>
             </div>
-        </header>
+            <div class="searchBar">
+                <input type="text" placeholder="Pesquisa">
+            </div>
+            <div class="itens">
+                <a href="feed.html"><i class="fa-solid fa-house-chimney"></i></a>
+                <a href=""><i class="fa-solid fa-comment"></i></a>
+                <a href=""><i class="fa-solid fa-square-plus"></i></a>
+                <a href=""><i class="fa-solid fa-compass"></i></a>
+                <a href=""><i class="fa-solid fa-bell"></i></a>
+                <a href="perfil.html"><img src="img/perfil.jpg" alt="perfil" class="icone" id="icone_fotos"></a>
+            </div>
+        </section>
+
         <Main class="conteudo">
             <div class="conteudo_container">
                 <section class="detalhes">
