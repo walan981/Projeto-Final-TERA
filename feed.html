@@ -13,51 +13,113 @@
     <title>Feed</title>
 </head>
 <body>
-    <section id="feedMenu">
+    <section id="containerMenu">
+    <header id="feedMenu" aria-label="cabeçalho">
         <div class="logo">
-            <h2>MyPet</h2>
+            <h2 aria-label="logomarca">MyPet</h2>
         </div>
         <div class="searchBar">
-            <input type="text" placeholder="Pesquisa">
+            <input type="text" placeholder="Pesquisar" aria-label="barra de pesquisa">
         </div>
-        <div class="itens">
-            <a href=""><i class="fa-solid fa-house-chimney"></i></a>
-            <a href=""><i class="fa-solid fa-comment"></i></a>
-            <a href=""><i class="fa-solid fa-square-plus"></i></a>
-            <a href=""><i class="fa-solid fa-compass"></i></a>
-            <a href=""><i class="fa-solid fa-bell"></i></a>
-            <a href="perfil.html"><img src="img/perfil.jpg" alt="perfil" class="icone" id="icone_fotos"></a>
-        </div>
+        <nav class="itens">
+            <a href="feed.html" aria-label="home"><i class="fa-solid fa-house-chimney"></i></a>
+            <a href="" aria-label="mensagens"><i class="fa-solid fa-comment"></i></a>
+            <a href="" aria-label="novo post"><i class="fa-solid fa-square-plus"></i></a>
+            <a href="" aria-label="explorar"><i class="fa-solid fa-compass"></i></a>
+            <a href="" aria-label="notificações"><i class="fa-solid fa-bell"></i></a>
+            <a href="perfil.html" aria-label="meu perfil"><img src="img/perfil.jpg" alt="perfil" class="icone" id="icone_fotos"></a>
+        </nav>
+    </header>
     </section>
 
-    <section id="feedMain">
+    <main id="feedMain">
 
         <!-- Formato template de posts simples -->
 
         <!-- POST 1 -->
-        <div class="post">
+        <div class="post" aria-label="postagem">
             <div class="postTop">
-                <a href="perfil.html">
+                <a href="perfil.html" aria-label="autor do post">
                     <img src="img/perfil.jpg" alt="perfil" class="icone_post">
                 </a>
                 <a><h3>FelinoDeTal</h3></a>
             </div>
             <div class="postLoc">
                 <a><i class="fa-solid fa-location-dot"></i></a>
-                <a href="#"><span>Localização</span></a>
+                <a href="#" aria-label="localização"><span>Localização</span></a>
             </div>
-            <div class="postPic">
+            <div class="postPic" aria-label="conteúdo do post">
                 <img src="img/gato (6).jpg">
             </div>
-            <div class="postItens">
-                <a href=""><i class="fa-solid fa-heart"></i></a>
-                <a href=""><i class="fa-solid fa-comment"></i></a>
-                <a href=""><i class="fa-solid fa-share"></i></a>
+            <div class="postItens" aria-label="interagir">
+                <a href="" aria-label="curtir"><i class="fa-solid fa-heart"></i></a>
+                <a href="" aria-label="comentar"><i class="fa-solid fa-comment"></i></a>
+                <a href="" aria-label="compartilhar"><i class="fa-solid fa-share"></i></a>
                 <div class="iten-save">
-                    <a href=""><i class="fa-solid fa-bookmark"></i></a>
+                    <a href="" aria-label="salvar post"><i class="fa-solid fa-bookmark"></i></a>
                 </div>
             </div>
-            <div class="postStats">
+            <div class="postStats" aria-label="estatísticas da postagem">
+                <h3>Curtido por .....</h3>
+                <a href=""><h4>Ver todos os N comentários</h4></a>
+                <h5>HÁ .... HORAS</h5>
+            </div>
+        </div>
+
+        <!-- POST 2 -->
+        <div class="post" aria-label="postagem">
+            <div class="postTop">
+                <a href="" aria-label="autor do post">
+                    <img src="img/mr-bubz.jpg" alt="perfil" class="icone_post">
+                </a>
+                <a><h3>Mr Bubz</h3></a>
+            </div>
+            <div class="postLoc">
+                <a><i class="fa-solid fa-location-dot"></i></a>
+                <a href="#" aria-label="localização"><span>Localização</span></a>
+            </div>
+            <div class="postPic" aria-label="conteúdo do post">
+                <img src="img/mr-bubz.jpg">
+            </div>
+            <div class="postItens" aria-label="interagir">
+                <a href="" aria-label="curtir"><i class="fa-solid fa-heart"></i></a>
+                <a href="" aria-label="comentar"><i class="fa-solid fa-comment"></i></a>
+                <a href="" aria-label="compartilhar"><i class="fa-solid fa-share"></i></a>
+                <div class="iten-save">
+                    <a href="" aria-label="salvar post"><i class="fa-solid fa-bookmark"></i></a>
+                </div>
+            </div>
+            <div class="postStats" aria-label="estatísticas da postagem">
+                <h3>Curtido por .....</h3>
+                <a href=""><h4>Ver todos os N comentários</h4></a>
+                <h5>HÁ .... HORAS</h5>
+            </div>
+        </div>
+
+        <!-- POST 3 -->
+        <div class="post" aria-label="postagem">
+            <div class="postTop">
+                <a href="" aria-label="autor do post">
+                    <img src="img/vet.jpg" alt="perfil" class="icone_post">
+                </a>
+                <a><h3>username</h3></a>
+            </div>
+            <div class="postLoc">
+                <a><i class="fa-solid fa-location-dot"></i></a>
+                <a href="#" aria-label="localização"><span>Localização</span></a>
+            </div>
+            <div class="postPic" aria-label="conteúdo do post">
+                <img src="img/vet.jpg">
+            </div>
+            <div class="postItens" aria-label="interagir">
+                <a href="" aria-label="curtir"><i class="fa-solid fa-heart"></i></a>
+                <a href="" aria-label="comentar"><i class="fa-solid fa-comment"></i></a>
+                <a href="" aria-label="compartilhar"><i class="fa-solid fa-share"></i></a>
+                <div class="iten-save">
+                    <a href="" aria-label="salvar post"><i class="fa-solid fa-bookmark"></i></a>
+                </div>
+            </div>
+            <div class="postStats" aria-label="estatísticas da postagem">
                 <h3>Curtido por .....</h3>
                 <a href=""><h4>Ver todos os N comentários</h4></a>
                 <h5>HÁ .... HORAS</h5>
@@ -65,71 +127,12 @@
         </div>
 
         
-        <!-- POST 2  -->
-        <div class="post">
-            <div class="postTop">
-                <a href="">
-                    <img src="img/mr-bubz.jpg" alt="perfil" class="icone_post">
-                </a>
-                <a><h3>Mr. Bubz</h3></a>
-            </div>
-            <div class="postLoc">
-                <a><i class="fa-solid fa-location-dot"></i></a>
-                <a href="#"><span>Localização</span></a>
-            </div>
-            <div class="postPic">
-                <img src="img/mr-bubz.jpg">
-            </div>
-            <div class="postItens">
-                <a href=""><i class="fa-solid fa-heart"></i></a>
-                <a href=""><i class="fa-solid fa-comment"></i></a>
-                <a href=""><i class="fa-solid fa-share"></i></a>
-                <div class="iten-save">
-                    <a href=""><i class="fa-solid fa-bookmark"></i></a>
-                </div>
-            </div>
-            <div class="postStats">
-                <h3>Curtido por .....</h3>
-                <a href=""><h4>Ver todos os N comentários</h4></a>
-                <h5>HÁ .... HORAS</h5>
-            </div>
-        </div>
-       
-        <!-- POST 3  -->
-        <div class="post">
-            <div class="postTop">
-                <a href="">
-                    <img src="img/mr-bubz.jpg" alt="perfil" class="icone_post">
-                </a>
-                <a><h3>username</h3></a>
-            </div>
-            <div class="postLoc">
-                <a><i class="fa-solid fa-location-dot"></i></a>
-                <a href="#"><span>Localização</span></a>
-            </div>
-            <div class="postPic">
-                <img src="img/vet.jpg">
-            </div>
-            <div class="postItens">
-                <a href=""><i class="fa-solid fa-heart"></i></a>
-                <a href=""><i class="fa-solid fa-comment"></i></a>
-                <a href=""><i class="fa-solid fa-share"></i></a>
-                <div class="iten-save">
-                    <a href=""><i class="fa-solid fa-bookmark"></i></a>
-                </div>
-            </div>
-            <div class="postStats">
-                <h3>Curtido por .....</h3>
-                <a href=""><h4>Ver todos os N comentários</h4></a>
-                <h5>HÁ .... HORAS</h5>
-            </div>
-        </div>
         
         <!-- Post com carretel -->
         <!-- vou fazer.. -->
 
 
 
-    </section>
+    </main>
 </body>
 </html>

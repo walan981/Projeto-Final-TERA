@@ -9,22 +9,24 @@
         <link rel="stylesheet" type="text/css" href="css/nav.css">
     </head>
     <body>
-        <section id="feedMenu">
-            <div class="logo">
-                <h2>MyPet</h2>
-            </div>
-            <div class="searchBar">
-                <input type="text" placeholder="Pesquisa">
-            </div>
-            <div class="itens">
-                <a href="feed.html"><i class="fa-solid fa-house-chimney"></i></a>
-                <a href=""><i class="fa-solid fa-comment"></i></a>
-                <a href=""><i class="fa-solid fa-square-plus"></i></a>
-                <a href=""><i class="fa-solid fa-compass"></i></a>
-                <a href=""><i class="fa-solid fa-bell"></i></a>
-                <a href="perfil.html"><img src="img/perfil.jpg" alt="perfil" class="icone" id="icone_fotos"></a>
-            </div>
-        </section>
+        <section id="containerMenu">
+            <header id="feedMenu" aria-label="cabeçalho">
+                <div class="logo">
+                    <h2 aria-label="logomarca">MyPet</h2>
+                </div>
+                <div class="searchBar">
+                    <input type="text" placeholder="Pesquisar" aria-label="barra de pesquisa">
+                </div>
+                <nav class="itens">
+                    <a href="feed.html" aria-label="home"><i class="fa-solid fa-house-chimney"></i></a>
+                    <a href="" aria-label="mensagens"><i class="fa-solid fa-comment"></i></a>
+                    <a href="" aria-label="novo post"><i class="fa-solid fa-square-plus"></i></a>
+                    <a href="" aria-label="explorar"><i class="fa-solid fa-compass"></i></a>
+                    <a href="" aria-label="notificações"><i class="fa-solid fa-bell"></i></a>
+                    <a href="perfil.html" aria-label="meu perfil"><img src="img/perfil.jpg" alt="perfil" class="icone" id="icone_fotos"></a>
+                </nav>
+            </header>
+            </section>
 
         <Main class="conteudo">
             <div class="conteudo_container">

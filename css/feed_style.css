@@ -13,7 +13,7 @@ i{
     font-size: 23px;
     /* margin-right: 10%; */
     color: white;
-    -webkit-text-stroke: 1.5px rgb(109, 110, 112);
+    -webkit-text-stroke: 1.5px rgb(54, 54, 54);
 }
 
 body{
@@ -21,7 +21,7 @@ body{
 }
 
 #feedMain{
-    /* background-color: antiquewhite; */
+    background-color: white;
     position: absolute;
     top: 20vh;
     left: 50%;
@@ -44,6 +44,7 @@ body{
 .post{
     justify-content: center;
     border: 1px solid rgb(109, 110, 112);
+    border-radius: 10px;
 }
 
 .postTop{
@@ -91,9 +92,12 @@ body{
 }
 
 .postItens{
+    position: relative;
     margin-top: 15px;
     margin-left: 30px;
     margin-bottom: 10px;
+    /* background-color: aqua; */
+    width: 90%;
 }
 
 .postItens a{
@@ -101,8 +105,11 @@ body{
 }
 
 .postItens .iten-save{
+    position: absolute;
+    right: 0;
+    /* background-color: red; */
     display: inline;
-    margin-left: 280px;
+    /* margin-left: 280px; */
 }
 
 
@@ -129,3 +136,32 @@ body{
     margin-bottom: 12px;
     color: rgb(109, 110, 112);
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    #feedMain {
+        width: 90vw;
+    }
+
+    #feedMain > *{
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px) {
+
+    #feedMain {
+        width: 100vw;
+    }
+
+    #feedMain > *{
+        width: 100%;
+    }
+    
+}
+
