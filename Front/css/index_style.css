@@ -41,10 +41,12 @@
 
 
 .containerLogin input[type=text],
-.containerLogin input[type=email]{
+.containerLogin input[type=email],
+.containerLogin input[type=password]{
     height: 40px;
     margin-bottom: 20px;
     padding-left: 10px;
+    width: 80%;
 
     background-color: white;
     color:  #7E92AC;
@@ -55,6 +57,19 @@
 
 .containerLogin input[type=submit]{
     text-align: center;
+    width: 30%;
+    height: 40px;
+    background: #127267;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 0;
+}
+
+.containerLogin button[type=submit]{
+    text-align: center;
+    margin: auto;
     width: 30%;
     height: 40px;
     background: #127267;

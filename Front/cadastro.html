@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/cadastro_style.css">
+    </head>
+    <body class="quadro">
+        <section class="informacoes">
+            <h1 class="logo">meuPet</h1>
+            <p class="textInicial">Cadastre-se para ver fotos e vídeos de Pets fofinhos.</p>
+            <form class="cadastro" onsubmit="addUser(event)">
+                <input type="text" name="Nome do Pet" class="campo" placeholder="Nome do Pet" required><br>
+                <select name="pet" class="campo" id="selecao">
+                    <option selected>Tipo de Pet</option>
+                    <option value="gato">Gato</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+                <input type="email" name="Email ou Número" id="emailField" class="campo" placeholder="Email"required><br>
+                <input type="text" name="username" id="userField" class="campo" placeholder="Username"required><br>
+                <input type="password" name="Senha" id="passwordField" class="campo" placeholder="Senha" required><br>
+                <button type="submit" value="cadastrar-se" class="botao_enviar">Criar conta</button>
+            </form>
+            <p class="politica">
+                Ao se cadastrar, você concorda com nossos <a href="">Termos</a> , <a href="">Política de Dados</a>  e <a href="">Política de Cookies</a>.
+            </p>
+        </section>
+        <section class="conectar">
+            <p>Tem uma conta? <a href="index.html">Conecte-se</a></p>
+        </section>
+    </body>
+
+
+
+    <script>
+        async function addUser(event){
+            event.preventDefault();
+            //window.history.back();
+
+            console.log('funcao rodando');
+            let email = document.getElementById("emailField").value;
+            let username = document.getElementById("userField").value;
+            let password = document.getElementById("passwordField").value;
+   
+            let _data ={
+                email: email,
+                username: username,
+                password: password,
+            };
+            console.log(_data)
+
+        await fetch("http://localhost:3001/api/users/cadastro",{
+                method: "POST",
+                body: JSON.stringify(_data),
+                headers: { "Content-type": "application/json; charset=UTF-8" },
+            }).then((res) => {
+                console.log(res);
+
+                if(res.ok == true){
+                    console.log('Usuário criado')
+                   // router.push('/login')
+                }else{
+                    console.log('Erro na criação do usuário')
+                }
+            })
+
+            // .then((json)=>{
+            //     if(json.id !== ''){
+            //         console.log('Usuário criado')
+            //     }else{
+            //         console.log('Erro na criação do usuário')
+            //     }
+            // });
+            
+        }
+    </script>
+</html>
