@@ -21,6 +21,7 @@
                 </select><br>
                 <input type="email" name="Email ou Número" id="emailField" class="campo" placeholder="Email"required><br>
                 <input type="text" name="username" id="userField" class="campo" placeholder="Username"required><br>
+                <input type="text" name="name" id="nameField" class="campo" placeholder="Name"required><br>
                 <input type="password" name="Senha" id="passwordField" class="campo" placeholder="Senha" required><br>
                 <button type="submit" value="cadastrar-se" class="botao_enviar">Criar conta</button>
             </form>
@@ -43,16 +44,18 @@
             console.log('funcao rodando');
             let email = document.getElementById("emailField").value;
             let username = document.getElementById("userField").value;
+            let name = document.getElementById("nameField").value;
             let password = document.getElementById("passwordField").value;
    
             let _data ={
                 email: email,
                 username: username,
+                name: name,
                 password: password,
             };
             console.log(_data)
 
-        await fetch("http://localhost:3001/api/users/cadastro",{
+        await fetch("http://localhost:3001/api/users/register",{
                 method: "POST",
                 body: JSON.stringify(_data),
                 headers: { "Content-type": "application/json; charset=UTF-8" },

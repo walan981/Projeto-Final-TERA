@@ -38,11 +38,19 @@
         }
         console.log(_data)
 
-        await fetch(`http://localhost:3001/api/users/login`,{
-            method: 'POST',
+        await fetch("http://localhost:3001/api/users/login",{
+            method: "POST",
             body: JSON.stringify(_data),
+            headers: { "Content-type": "application/json; charset=UTF-8" },
         }).then((res)=>{
             console.log(res);
+
+            if(res.ok == true){
+                    console.log('Usuário Logado!')
+                   // router.push('/login')
+                }else{
+                    console.log('Erro no Login')
+                }
         })
     }
 </script>
